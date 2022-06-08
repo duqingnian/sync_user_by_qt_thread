@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/shadow.png</file>
+        <file>Resources/transparent.png</file>
+        <file>Resources/title/close.png</file>
+        <file>Resources/title/max.png</file>
+        <file>Resources/title/min.png</file>
+        <file>Resources/title/restore.png</file>
+        <file>Resources/title/setting.png</file>
+        <file>Resources/title/title.css</file>
+        <file>Resources/title/title_white.css</file>
+        <file>Resources/mfc.ico</file>
+    </qresource>
+</RCC>
