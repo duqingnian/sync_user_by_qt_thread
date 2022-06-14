@@ -12,7 +12,7 @@ Dialog::Dialog(QWidget *parent) : BaseWindow(parent) , ui(new Ui::Dialog)
     int max = 5;
     worker = new SyncWoker(max);
 
-    connect(worker,&SyncWoker::updateProgressBar,this,[=](int i){
+    connect(worker,&SyncWoker::updateProgressBar,this,[this](int i){
         ui->progressBar->setValue(i);
     });
     connect(worker,&SyncWoker::appendMsg,this,[=](QString msg){
@@ -30,7 +30,7 @@ Dialog::Dialog(QWidget *parent) : BaseWindow(parent) , ui(new Ui::Dialog)
     this->m_TitleBar->setButtonType(MIN_BUTTON);
     this->m_TitleBar->set_width(this->width());
     this->m_TitleBar->show_windows();
-    this->m_TitleBar->setTitle("文件服务器 - 用户同步工具");
+    this->m_TitleBar->setTitle("电影同步工具");
     connect(m_TitleBar, &TitleBar::signalButtonCloseClicked, this, [=](){
         worker->exit();
         QCoreApplication::quit();

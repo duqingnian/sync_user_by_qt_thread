@@ -19,7 +19,7 @@ public:
     void sync();
 private:
     int max;
-    QString userid;
+    QString movie_id;
     QSqlDatabase db;
     bool running = true;
 
